@@ -1,0 +1,14 @@
+var Bot = require('discord-bot');
+ 
+var bot = new Bot({
+    email: <incominggoldenyt@gmail.com>,
+    password: <Dodger1>
+});
+ 
+bot
+    .on(bot.triggers.command, 'Hi guys!')
+    .do(function(bot, conf, args) {
+        this.reply('Im not functional yet');
+    });
+ 
+bot.connect();
